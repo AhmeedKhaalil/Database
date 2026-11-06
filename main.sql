@@ -47,7 +47,7 @@ CREATE TABLE Firefighter (
     CONSTRAINT UQ_Firefighter_NationalID UNIQUE (NationalID),  -- set NationalID as a unique value.
     CONSTRAINT CK_Firefighter_Salary CHECK (Salary > 0),   -- check if the salary more than 0 or not.
     CONSTRAINT CK_Firefighter_Status
-        CHECK (Status IN ('active', 'anLeave', 'retired')) ); -- to check firefighter's status
+        CHECK (Status IN ('active', 'onLeave', 'retired')) ); -- to check firefighter's status
 
 -- Truck Table
 CREATE TABLE Truck (
